@@ -51,30 +51,6 @@
         "dependencies": {
           "Stub.System.Data.SQLite.Core.NetStandard": "1.0.113.2"
         }
-      },
-      "Tarefas.DAO/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Dapper": "2.0.78",
-          "System.Data.SQLite.Core": "1.0.113.7"
-        },
-        "compile": {
-          "bin/placeholder/Tarefas.DAO.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Tarefas.DAO.dll": {}
-        }
-      },
-      "Tarefas.DTO/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "compile": {
-          "bin/placeholder/Tarefas.DTO.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Tarefas.DTO.dll": {}
-        }
       }
     }
   },
@@ -127,22 +103,12 @@
         "system.data.sqlite.core.1.0.113.7.nupkg.sha512",
         "system.data.sqlite.core.nuspec"
       ]
-    },
-    "Tarefas.DAO/1.0.0": {
-      "type": "project",
-      "path": "../Tarefas.DAO/Tarefas.DAO.csproj",
-      "msbuildProject": "../Tarefas.DAO/Tarefas.DAO.csproj"
-    },
-    "Tarefas.DTO/1.0.0": {
-      "type": "project",
-      "path": "../Tarefas.DTO/Tarefas.DTO.csproj",
-      "msbuildProject": "../Tarefas.DTO/Tarefas.DTO.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Tarefas.DAO >= 1.0.0",
-      "Tarefas.DTO >= 1.0.0"
+      "Dapper >= 2.0.78",
+      "System.Data.SQLite.Core >= 1.0.113.7"
     ]
   },
   "packageFolders": {
@@ -151,11 +117,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/decom/Documentos/Bootcamp-Thiago/Bootcamp-ION-Thiago/Tarefas/src/Tarefas.Web/Tarefas.Web.csproj",
-      "projectName": "Tarefas.Web",
-      "projectPath": "/home/decom/Documentos/Bootcamp-Thiago/Bootcamp-ION-Thiago/Tarefas/src/Tarefas.Web/Tarefas.Web.csproj",
+      "projectUniqueName": "/home/decom/Documentos/Bootcamp-Thiago/Bootcamp-ION-Thiago/Tarefas/src/Tarefas.DAO/Tarefas.DAO.csproj",
+      "projectName": "Tarefas.DAO",
+      "projectPath": "/home/decom/Documentos/Bootcamp-Thiago/Bootcamp-ION-Thiago/Tarefas/src/Tarefas.DAO/Tarefas.DAO.csproj",
       "packagesPath": "/home/decom/.nuget/packages/",
-      "outputPath": "/home/decom/Documentos/Bootcamp-Thiago/Bootcamp-ION-Thiago/Tarefas/src/Tarefas.Web/obj/",
+      "outputPath": "/home/decom/Documentos/Bootcamp-Thiago/Bootcamp-ION-Thiago/Tarefas/src/Tarefas.DAO/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/decom/.nuget/NuGet/NuGet.Config"
@@ -169,14 +135,7 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {
-            "/home/decom/Documentos/Bootcamp-Thiago/Bootcamp-ION-Thiago/Tarefas/src/Tarefas.DAO/Tarefas.DAO.csproj": {
-              "projectPath": "/home/decom/Documentos/Bootcamp-Thiago/Bootcamp-ION-Thiago/Tarefas/src/Tarefas.DAO/Tarefas.DAO.csproj"
-            },
-            "/home/decom/Documentos/Bootcamp-Thiago/Bootcamp-ION-Thiago/Tarefas/src/Tarefas.DTO/Tarefas.DTO.csproj": {
-              "projectPath": "/home/decom/Documentos/Bootcamp-Thiago/Bootcamp-ION-Thiago/Tarefas/src/Tarefas.DTO/Tarefas.DTO.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -188,6 +147,16 @@
     "frameworks": {
       "net7.0": {
         "targetAlias": "net7.0",
+        "dependencies": {
+          "Dapper": {
+            "target": "Package",
+            "version": "[2.0.78, )"
+          },
+          "System.Data.SQLite.Core": {
+            "target": "Package",
+            "version": "[1.0.113.7, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -200,9 +169,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

@@ -6,13 +6,13 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "Tarefas.Web/1.0.0": {
+      "Tarefas.DAO/1.0.0": {
         "dependencies": {
-          "Tarefas.DAO": "1.0.0",
-          "Tarefas.DTO": "1.0.0"
+          "Dapper": "2.0.78",
+          "System.Data.SQLite.Core": "1.0.113.7"
         },
         "runtime": {
-          "Tarefas.Web.dll": {}
+          "Tarefas.DAO.dll": {}
         }
       },
       "Dapper/2.0.78": {
@@ -57,25 +57,11 @@
         "dependencies": {
           "Stub.System.Data.SQLite.Core.NetStandard": "1.0.113.2"
         }
-      },
-      "Tarefas.DAO/1.0.0": {
-        "dependencies": {
-          "Dapper": "2.0.78",
-          "System.Data.SQLite.Core": "1.0.113.7"
-        },
-        "runtime": {
-          "Tarefas.DAO.dll": {}
-        }
-      },
-      "Tarefas.DTO/1.0.0": {
-        "runtime": {
-          "Tarefas.DTO.dll": {}
-        }
       }
     }
   },
   "libraries": {
-    "Tarefas.Web/1.0.0": {
+    "Tarefas.DAO/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -100,16 +86,6 @@
       "sha512": "sha512-2DKMIxfZpIVzdMfx1dj9qvTm+0m0Mx6sN6CZXMQDNytU7Sk/JKo0Ox6mvHAicfHrQgqZbUZMzMMtLXD0kwmFfg==",
       "path": "system.data.sqlite.core/1.0.113.7",
       "hashPath": "system.data.sqlite.core.1.0.113.7.nupkg.sha512"
-    },
-    "Tarefas.DAO/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Tarefas.DTO/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     }
   }
 }
