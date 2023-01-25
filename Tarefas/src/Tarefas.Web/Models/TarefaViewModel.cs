@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace Tarafas.Web.Models;
+namespace Tarefas.Web.Models;
 
 public class TarefaViewModel
 {
